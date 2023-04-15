@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+    <style>
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background:linear-gradient(90deg, rgb(246, 255, 0), rgb(11, 172, 212)); 
+        font-family:fantasy;
+        }
+
+        li {
+        float: left;
+        padding-left: 10px;
+        font-size: 20px;
+        }
+
+        li a {
+        display:inline-block;
+        text-align:left;
+        padding: 20px 20px;
+        text-decoration:solid;
+        }
+
+        li a:hover {
+        background-color: rgb(168, 76, 154);
+        color: rgb(255, 132, 0);
+        }
+
+        footer{
+            text-align: center;
+            color: rgb(1, 66, 60);
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .info{
+            background-color: aqua;
+            text-align:center;
+            text-overflow: ellipsis;
+            padding: 20px;
+        }
+        .data{
+            background-color: coral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        body{
+            background-color: rgba(250, 202, 8, 0.326);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+		<nav>
+        <ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#ev">Events</a></li>
+			<li><a href="#bs">Booking Status</a></li>
+			<li><a href="#as">About us</a></li>
+			<li><a href="#cs">Contact us📱📩</a></li>
+			<li style="float:right; font-family: Arial, Helvetica, sans-serif;"><a href="">Tour & Travel Dummy Site <br>Hosted By: Sagar Saha</a></li>
+		</ul>
+        </nav>
+    </header>
+            <form>
+                
+                <fieldset class="info">
+                        <h3>**Contact Details**</h3>
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" required>
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname">
+                        <br><br>
+                        <label for="phone">Contact:</label>
+                        <input type="text" value="+91" size="1">
+                        <input type="number" id="phone">                                                          
+                        <br><br>
+                        <label>Email: </label>
+                        <input type="email">
+                
+                </fieldset>
+                <fieldset class="data">
+                    <h3>++Select from the Curated Packages++</h3> 
+                    <input list="packages">
+                    <datalist id="packages">
+                            <option value="None">
+                            <option value="Kashmir">
+                            <option value="Kanyakumari">
+                            <option value="North-East">
+                            <option value="Ooty">
+                            <option value="Wayanad">
+                            <option value="Rajasthan">
+                            <option value="Gujrat">
+                            <option value="Himachal">
+                            <option value="Kerala">
+                            <option value="Gangtok">
+                            <option value="Shimla">
+                            <option value="Puri">
+                            <option value="Kolkata">
+                            <option value="Andaman">
+                            <option value="Manali">
+                            <option value="Uttarakhand">
+                            <option value="Kasaul">
+                            <option value="Leh Ladakh">
+                            <option value="Coorg">
+                            <option value="Mussoorie">
+                            <option value="Varanasi">
+                            <option value="Amritsar">
+                            <option value="Pondicherry">
+                            <option value="Haridwar">
+                            <option value="Kedarnath">
+                            <option value="Amarnath">
+                            <option value="Vaishno Dev">
+                            <opt value="Tirupati">
+                    </datalist> <br>
+                    <p>Trip Start Date: <input type="date"></p>
+                    <p>Number of Person:
+                    <input type="text" size="1" id="adult"><label for="adult">  Adult</label>  
+                    <input type="text" size="1" id="child"><label for="child">  Children</label> </p>           
+                
+                        <p><b>Choose Services to be included:</b>
+                        <label for="food">Meal</label>
+                        <input type="checkbox" id="food" name="food">                         
+                        <label for="cab">Cab Service</label>    
+                        <input type="checkbox" id="cab" name="cab">
+                        <label for="stay">Accomodation</label>                    
+                        <input type="checkbox" id="stay" name="hotel">
+                        <label for="ss">Sight Seeing</label>                         
+                        <input type="checkbox" id="ss" name="ss"><br><br></p>   
+                        <label for="request">Special Request?</label><br>                
+                        <textarea placeholder="Please briefly mention your preferances..." rows="4" cols="50"></textarea>
+                        
+                            <p>I accept all Safety rules to be followed during the trip:</p> 
+                            <input type="radio" id="t" name="t&c" >
+                            <label for="m">Accept</label>
+                            <input type="radio" id="f" name="t&c">
+                            <label for="f">Decline</label><br><br>
+                            
+                            <input type="button" value="Click to Submit">
+            
+                </fieldset>    
+            </form>
+    
+    <footer>@Copyright Reserved</footer>
+
+</body>
+</html>
